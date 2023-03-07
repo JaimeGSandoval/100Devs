@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(216, 216, 216);
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  height: 150px;
+}
+
+.second-row {
+  height: 250px;
+  border-top: 1px solid grey;
+}
+
+.left-box,
+.right-box {
+  float: left;
+  height: 300px;
+  border-top: 1px solid grey;
+}
+
+.left-box {
+  width: 40%;
+  border-right: 1px solid grey;
+}
+
+.right-box {
+  width: 60%;
+  border-top: 1px solid grey;
+}
+
+footer {
+  clear: both;
+  border-top: 1px solid grey;
+}

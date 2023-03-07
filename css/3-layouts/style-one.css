@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(216, 216, 216);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 150px;
+}
+
+.second-row {
+  width: 33.3333%;
+  height: 200px;
+  border: 1px solid grey;
+  border-bottom: none;
+  float: left;
+}
+
+.third-row {
+  width: 50%;
+  height: 300px;
+  float: left;
+  border: 1px solid grey;
+  border-bottom: none;
+}
+
+footer {
+  clear: both;
+  border: 1px solid grey;
+  height: 150px;
+}

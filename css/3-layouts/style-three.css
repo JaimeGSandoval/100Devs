@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(216, 216, 216);
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  height: 150px;
+}
+
+section {
+  border-top: 1px solid grey;
+  float: left;
+  height: 650px;
+}
+
+.small-box {
+  width: 20%;
+  border-right: 1px solid grey;
+}
+
+.big-box {
+  width: 40%;
+  border-right: 1px solid grey;
+}
+
+footer {
+  clear: both;
+  border-top: 1px solid grey;
+}
