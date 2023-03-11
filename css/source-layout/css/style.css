@@ -1,0 +1,285 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(246, 249, 252);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header {
+  border-bottom: 2px solid lightgrey;
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+}
+
+.inner-hero {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.features {
+  width: 100%;
+
+  clear: both;
+}
+
+.inner-feature {
+  width: 90%;
+  margin: auto;
+}
+
+.collect {
+  margin-top: 100px;
+}
+
+.inner-collect {
+  width: 90%;
+  margin: auto;
+}
+
+footer {
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.header {
+  text-align: center;
+}
+
+.bars-icon {
+  color: #354557;
+  float: left;
+}
+
+.header span {
+  text-transform: uppercase;
+  text-align: center;
+  color: #354557;
+  font-weight: bold;
+  position: relative;
+  right: 5px;
+  font-size: 19px;
+}
+
+.nav {
+  width: 400px;
+  margin: auto;
+}
+
+.nav ul li {
+  float: left;
+  list-style: none;
+  margin: 0 15px;
+}
+
+.inner-nav {
+  width: 400px;
+  margin: auto;
+  position: relative;
+  right: 17px;
+  display: none;
+  float: left;
+}
+
+.nav a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #354557;
+}
+
+.share {
+  background: #354557;
+  color: white;
+  float: right;
+  padding: 8px 20px;
+  position: relative;
+  bottom: 4px;
+  text-decoration: none;
+  display: none;
+}
+
+.inner-hero {
+  position: relative;
+}
+
+.inner-hero span {
+  color: #b3b3b3;
+}
+
+.inner-hero h1 {
+  color: #354557;
+}
+
+.inner-hero input {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: none;
+}
+
+.inner-hero button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background-color: rgb(54, 69, 87);
+  color: white;
+  border: none;
+}
+
+.inner-hero p {
+  color: #8e8e8e;
+  line-height: 24px;
+  margin-top: 30px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.hero-img {
+  width: 100%;
+  height: 300px;
+  margin: 50px auto 0;
+  background-image: url('../hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /* right: -40px; */
+}
+
+.feature-box {
+  margin-bottom: 60px;
+}
+
+.inner-feature .icon,
+.inner-feature h3 {
+  color: #354557;
+}
+
+.inner-feature p {
+  color: #8e8e8e;
+  line-height: 24px;
+}
+
+.inner-feature a {
+  color: #354557;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 30px;
+  display: block;
+}
+
+.inner-collect h2 {
+  color: #354557;
+}
+
+.inner-collect p {
+  color: #8e8e8e;
+  line-height: 24px;
+}
+
+.collect-img {
+  width: 100%;
+  height: 200px;
+  background-color: #8e8e8e;
+}
+
+@media screen and (min-width: 768px) {
+  .bars-icon {
+    display: none;
+  }
+
+  .header {
+    border-bottom: none;
+    padding: 14px 30px;
+  }
+
+  .header span {
+    float: left;
+  }
+
+  .inner-nav,
+  .share {
+    display: block;
+  }
+
+  .left-box {
+    width: 55%;
+    float: left;
+  }
+
+  .inner-hero input,
+  .inner-hero button {
+    padding: 10px;
+  }
+
+  .inner-hero input {
+    display: inline;
+    width: 70%;
+  }
+
+  .inner-hero button {
+    width: 20%;
+  }
+
+  .inner-hero p {
+    width: 70%;
+  }
+
+  .hero-img {
+    float: right;
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    position: absolute;
+    right: -50px;
+  }
+
+  .features {
+    margin-top: 200px;
+  }
+
+  .inner-feature {
+    margin: auto;
+    width: 94%;
+  }
+
+  .feature-box {
+    width: 24%;
+    float: left;
+    margin: 0 0.3%;
+  }
+
+  .inner-collect h2 {
+    font-size: 40px;
+  }
+
+  .inner-collect p {
+    width: 50%;
+  }
+}
