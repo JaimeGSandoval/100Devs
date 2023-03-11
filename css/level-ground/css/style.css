@@ -1,0 +1,324 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background: #6a7688;
+  padding: 10px 0;
+}
+
+.inner-header {
+  width: 90%;
+
+  height: auto;
+  margin: auto;
+}
+
+ul {
+  float: left;
+  width: 33%;
+}
+
+.inner-header li {
+  float: left;
+  list-style: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.inner-header a {
+  color: white;
+}
+
+.inner-header li:nth-of-type(1) {
+  margin-right: 40px;
+}
+
+.hero {
+  background-color: #6a7688;
+  background-image: url('../hero.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position-y: -100px;
+}
+
+.inner-hero {
+  height: 600px;
+  width: 80%;
+  margin: auto;
+}
+
+.why,
+.volunteer {
+  background: white;
+}
+
+.inner-why,
+.inner-volunteer {
+  width: 40%;
+  margin: auto;
+}
+
+.info {
+  background: #6a7688;
+}
+
+.inner-info {
+  width: 50%;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.inner-info > div {
+}
+
+.wrapper {
+  border: 1px solid orange;
+  width: 90%;
+  margin: auto;
+}
+
+footer {
+  background: black;
+  height: auto;
+  padding: 30px 0;
+}
+
+.inner-footer {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.left-box {
+  float: left;
+  height: 100%;
+  width: 300px;
+}
+
+.right-box {
+  float: right;
+  height: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.logo-box {
+  float: left;
+  width: 33%;
+}
+
+.logo {
+  width: 50px;
+  margin: auto;
+  display: block;
+}
+
+.donate-box {
+  float: right;
+  width: 33%;
+  height: auto;
+}
+
+.donate-box a {
+  border-radius: 5px;
+  background: white;
+  text-transform: uppercase;
+  color: #6a7688;
+  padding: 10px 14px;
+  margin-left: auto;
+  position: relative;
+  top: 4px;
+  float: right;
+}
+
+.hero-info-box {
+  width: 60%;
+  margin: auto;
+  padding-top: 150px;
+  color: white;
+  text-align: center;
+}
+
+.inner-hero {
+  padding: 400px auto 0;
+}
+
+.hero h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.7rem;
+}
+
+.hero-info-box p {
+  margin: 40px auto 0;
+  font-size: 17px;
+  width: 70%;
+  line-height: 28px;
+}
+
+.video-text-box {
+  margin-top: 40px;
+}
+
+.video-text-box a {
+  color: white;
+  margin-right: 15px;
+}
+
+.inner-why,
+.volunteer {
+  padding: 100px 0;
+}
+
+.inner-why h2,
+.inner-volunteer h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.inner-why p,
+.inner-volunteer p {
+  padding: 0 100px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.info-box {
+  width: 42%;
+  float: left;
+}
+
+.box-2 {
+  float: right;
+}
+
+.info-box h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.info-box p,
+.info-box a {
+  text-align: center;
+  display: block;
+}
+
+.info-box p {
+  line-height: 28px;
+}
+
+.info-box a,
+.inner-volunteer a {
+  display: block;
+  padding: 15px 0;
+  width: 140px;
+  text-transform: uppercase;
+  border: 1px solid rgb(88, 88, 88);
+  margin: 30px auto 0;
+  text-align: center;
+  color: black;
+}
+
+.visit-img {
+  width: 100%;
+  height: 200px;
+  border: 1px solid pink;
+  margin-bottom: 30px;
+}
+
+.icon-box {
+  width: auto;
+  padding: 20px 0;
+}
+
+.icon {
+  font-size: 1.8rem;
+  margin-right: 30px;
+  color: white;
+}
+
+.footer-box {
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.footer-box a {
+  color: white;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+
+.footer-box a:nth-of-type(1) {
+  text-transform: uppercase;
+  color: grey;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  display: block;
+  padding: 20px 0;
+}
+
+address span {
+  color: grey;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+address span:last-of-type {
+  color: white;
+  font-style: normal;
+}
+
+.left-box,
+.right-box {
+  padding-bottom: 40px;
+}
+
+.bottom {
+  border-top: 1px solid white;
+  clear: both;
+  margin-top: 30px;
+}
+
+.bottom p {
+  color: white;
+}
