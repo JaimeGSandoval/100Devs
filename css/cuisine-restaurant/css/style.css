@@ -1,0 +1,446 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header {
+  height: auto;
+  display: flex;
+  width: 88%;
+  margin: auto;
+  padding: 1rem 0;
+  background-color: transparent;
+}
+
+.main {
+  background-image: url('../food.jpg');
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  position: relative;
+}
+
+.main::before,
+.about:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-image: url('../food-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-about,
+.inner-online {
+  width: 88%;
+  margin: auto;
+  padding: 100px 0;
+  position: relative;
+  z-index: 5;
+}
+
+.inner-online {
+  text-align: center;
+}
+
+.inner-hours {
+  width: 88%;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+
+footer {
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.mobile-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: scaleX(-1);
+  color: white;
+}
+
+.desktop-box {
+  display: none;
+  transform: scaleX(-1);
+  align-items: center;
+
+  color: white;
+}
+
+.nav-box,
+.nav-box ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-box ul li {
+  margin: 0 0.6rem;
+}
+
+.nav-box a {
+  color: white;
+
+  text-decoration: none;
+}
+
+.nav-box i {
+  margin: 0 1.3rem;
+  cursor: pointer;
+}
+
+.hero-info-box {
+  width: 88%;
+  margin: 50px auto 0;
+  transform: scaleX(-1);
+}
+
+.hero-info-box h1 {
+  color: white;
+
+  text-transform: capitalize;
+}
+
+.hero-info-box form {
+  position: relative;
+}
+
+.hero-info-box input {
+  padding: 0.6rem 0.6rem 0.6rem 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.hero-info-box i {
+  position: absolute;
+  top: 23%;
+  left: 0.5rem;
+  color: rgb(184, 184, 184);
+}
+
+.hero-info-box a,
+.inner-about a {
+  background-color: orange;
+  color: white;
+
+  text-decoration: none;
+  padding: 0.6rem 0.8rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.icon-box {
+  display: flex;
+
+  padding-left: 0;
+}
+
+.icon-box a {
+  background-color: transparent;
+}
+
+.icon-box i {
+  color: orange;
+  position: static;
+  background-color: transparent;
+  list-style: none;
+}
+
+.icon-box a:nth-of-type(1) {
+  padding-left: 0;
+}
+
+.inner-about span {
+  color: orange;
+  text-transform: capitalize;
+}
+
+.inner-about h2 {
+  color: white;
+  text-transform: capitalize;
+}
+
+.inner-about p {
+  color: white;
+}
+
+.inner-online span {
+  color: orange;
+  text-transform: capitalize;
+}
+
+.inner-online h2 {
+  text-transform: capitalize;
+}
+
+.inner-online ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+.inner-online li {
+  color: black;
+  text-transform: capitalize;
+  padding: 0 0.5rem 0.5rem;
+  border-bottom: 1px solid black;
+  font-size: 0.8rem;
+}
+
+.inner-online li:nth-of-type(1) {
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+
+.specialty-imgs-box {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.specialty-img {
+  background-image: url('../food-2.jpg');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem 0;
+}
+
+.inner-online .dots-box li {
+  list-style: none;
+  padding: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgb(255, 212, 132);
+}
+
+.inner-online .dots-box li:nth-of-type(3) {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+
+  background-color: orange;
+}
+
+.inner-hours span:nth-of-type(1) {
+  color: orange;
+  text-transform: capitalize;
+}
+
+.inner-hours i {
+  display: block;
+  color: orange;
+}
+
+.inner-hours span:nth-of-type(2) {
+  display: block;
+  margin: 1rem 0;
+}
+
+.phone-number {
+  color: orange;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.hours-img {
+  background-image: url('../food.jpg');
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 2rem;
+}
+
+.operation-box .box span {
+  color: black;
+}
+
+.inner-customer .dots-box {
+  justify-content: center;
+}
+
+.inner-customer .dots-box li {
+  list-style: none;
+  padding: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgb(255, 212, 132);
+}
+
+.inner-customer {
+  width: 88%;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+
+.inner-customer span:first-of-type {
+  color: orange;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 0 auto 2rem;
+}
+
+.profile-img + span {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.profile-img + span + span {
+  color: lightgrey;
+  font-size: 14px;
+}
+
+.inner-customer ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-customer ul li i {
+  color: gold;
+}
+
+.inner-customer p {
+  font-style: italic;
+  line-height: 24px;
+}
+
+.dot {
+  margin: 0 4px;
+}
+
+@media screen and (min-width: 900px) {
+  .header,
+  .hero-info-box {
+    width: 80%;
+  }
+
+  .inner-about {
+    width: 50%;
+    margin-right: 100px;
+  }
+
+  .hero-info-box h1 {
+    font-size: 3rem;
+  }
+
+  .hero-info-box form {
+    display: inline-block;
+    width: 40%;
+  }
+
+  .hero-info-box input {
+    width: 100%;
+    border-radius: 0;
+  }
+  .hero-info-box a {
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+  .inner-about h2 {
+    font-size: 2.2rem;
+  }
+
+  .mobile-box {
+    display: none;
+  }
+
+  .desktop-box {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .specialty-imgs-box {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .inner-online ul {
+    justify-content: center;
+  }
+
+  .inner-online ul li {
+    padding: 1rem;
+  }
+
+  .inner-online .dots-box {
+    margin: auto;
+  }
+
+  .operation-box {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+  }
+
+  .hours-img {
+    background-size: cover;
+    height: 500px;
+  }
+
+  .box span:first-of-type {
+    font-size: 14px;
+  }
+}
