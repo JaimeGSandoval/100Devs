@@ -106,3 +106,18 @@ function doubleChar(str) {
 function grow(x) {
   return x.reduce((acc, curr) => (acc *= curr), 1);
 }
+
+// Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+function sumTwoSmallestNumbers(numbers) {
+  const sorted = numbers.sort((a, b) => a - b);
+  return sorted[0] + sorted[1];
+}
+
+// Given a list of integers, determine whether the sum of its elements is odd or even.
+// Give your answer as a string matching "odd" or "even".
+// If the input array is empty consider it as: [0] (array with a zero).
+
+function oddOrEven(array) {
+  return array.reduce((acc, curr) => acc + curr, 0) % 2 === 0 ? 'even' : 'odd';
+}
