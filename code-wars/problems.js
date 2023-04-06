@@ -121,3 +121,22 @@ function sumTwoSmallestNumbers(numbers) {
 function oddOrEven(array) {
   return array.reduce((acc, curr) => acc + curr, 0) % 2 === 0 ? 'even' : 'odd';
 }
+
+// Write a function that returns both the minimum and maximum number of the given list/array.
+
+function minMax(arr) {
+  return [Math.min(...arr), Math.max(...arr)];
+}
+
+// Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with a lower index. If you get an empty array/list, return an empty array/list. Don't change the order of the elements that are left.
+
+function removeSmallest(numbers) {
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+}
+
+// Write a function which takes a list of strings and returns each line prepended by the correct number. The numbering starts at 1. The format is n: string. Notice the colon and space in between.
+
+var number = function (array) {
+  return array.map((el, i) => `${i + 1}: ${el}`);
+};
