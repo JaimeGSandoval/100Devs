@@ -140,3 +140,23 @@ function removeSmallest(numbers) {
 var number = function (array) {
   return array.map((el, i) => `${i + 1}: ${el}`);
 };
+
+// Write a function that takes an array of strings as an argument and returns a sorted array containing the same strings, ordered from shortest to longest.
+
+// All of the strings in the array passed to your function will be different lengths, so you will not have to decide how to order multiple strings of the same length.
+
+function sortByLength(array) {
+  return array.sort((a, b) => a.length - b.length);
+}
+
+// Write a function that takes a single string (word) as argument. The function must return an ordered list containing the indexes of all capital letters in the string.
+
+function capitals(word) {
+  const result = [];
+
+  word.split('').forEach((char, i) => {
+    if (char === char.toUpperCase()) result.push(i);
+  });
+
+  return result;
+}
